@@ -562,7 +562,7 @@ Section:NewButton("Larry Angy", "Spawns Larry Angy Entity", function()
 	-- Create entity
 	local entityTable = Spawner.createEntity({
 		CustomName = "Larry Angy", -- Custom name of your entity
-		Model = "rbxassetid://13180628907", -- Can be GitHub file or rbxassetid
+		Model = "rbxassetid://13180627351", -- Can be GitHub file or rbxassetid
 		Speed = 250, -- Percentage, 100 = default Rush speed
 		DelayTime = 0, -- Time before starting cycles (seconds)
 		HeightOffset = 0,
@@ -597,6 +597,192 @@ Section:NewButton("Larry Angy", "Spawns Larry Angy Entity", function()
 				Sound2 = {
 					8698457935, -- SoundId
 					{ Volume = 0.5 }, -- Sound properties13074272569
+				},
+				Flashing = {
+					true, -- Enabled/Disabled
+					Color3.fromRGB(255, 255, 255), -- Color
+				},
+				Tease = {
+					true, -- Enabled/Disabled
+					Min = 1,
+					Max = 3,
+				},
+			},
+		},
+		CustomDialog = {"You can", "put your", "custom death", "message here."}, -- Custom death message
+	})
+
+
+	-----[[  Debug -=- Advanced  ]]-----
+	entityTable.Debug.OnEntitySpawned = function()
+		print("Entity has spawned:", entityTable)
+	end
+
+	entityTable.Debug.OnEntityDespawned = function()
+		print("Entity has despawned:", entityTable)
+	end
+
+	entityTable.Debug.OnEntityStartMoving = function()
+		print("Entity has started moving:", entityTable)
+	end
+
+	entityTable.Debug.OnEntityFinishedRebound = function()
+		print("Entity has finished rebound:", entityTable)
+	end
+
+	entityTable.Debug.OnEntityEnteredRoom = function(room)
+		print("Entity:", entityTable, "has entered room:", room)
+	end
+
+	entityTable.Debug.OnLookAtEntity = function()
+		print("Player has looked at entity:", entityTable)
+	end
+
+	entityTable.Debug.OnDeath = function()
+		warn("Player has died.")
+	end
+	------------------------------------
+
+
+	-- Run the created entity
+	Spawner.runEntity(entityTable)
+end)
+
+Section:NewButton("🌽hub", "Spawns 🌽hub Entity", function()
+	local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+
+
+	-- Create entity
+	local entityTable = Spawner.createEntity({
+		CustomName = "🌽hub", -- Custom name of your entity
+		Model = "rbxassetid://13180675527", -- Can be GitHub file or rbxassetid
+		Speed = 100, -- Percentage, 100 = default Rush speed
+		DelayTime = 0, -- Time before starting cycles (seconds)
+		HeightOffset = 0,
+		CanKill = true,
+		KillRange = 25,
+		BackwardsMovement = false,
+		BreakLights = true,
+		FlickerLights = {
+			true, -- Enabled/Disabled
+			1, -- Time (seconds)
+		},
+		Cycles = {
+			Min = 1,
+			Max = 10,
+			WaitTime = 0,
+		},
+		CamShake = {
+			false, -- Enabled/Disabled
+			{3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
+			0, -- Shake start distance (from Entity to you)
+		},
+		Jumpscare = {
+			true, -- Enabled/Disabled
+			{
+				Image1 = "rbxassetid://9442211790", -- Image1 url
+				Image2 = "rbxassetid://9442211790", -- Image2 url
+				Shake = true,
+				Sound1 = {
+					9091915146, -- SoundId
+					{ Volume = 2 }, -- Sound properties
+				},
+				Sound2 = {
+					9091915146, -- SoundId
+					{ Volume = 10 }, -- Sound properties13074272569
+				},
+				Flashing = {
+					true, -- Enabled/Disabled
+					Color3.fromRGB(255, 255, 255), -- Color
+				},
+				Tease = {
+					true, -- Enabled/Disabled
+					Min = 1,
+					Max = 3,
+				},
+			},
+		},
+		CustomDialog = {"You can", "put your", "custom death", "message here."}, -- Custom death message
+	})
+
+
+	-----[[  Debug -=- Advanced  ]]-----
+	entityTable.Debug.OnEntitySpawned = function()
+		print("Entity has spawned:", entityTable)
+	end
+
+	entityTable.Debug.OnEntityDespawned = function()
+		print("Entity has despawned:", entityTable)
+	end
+
+	entityTable.Debug.OnEntityStartMoving = function()
+		print("Entity has started moving:", entityTable)
+	end
+
+	entityTable.Debug.OnEntityFinishedRebound = function()
+		print("Entity has finished rebound:", entityTable)
+	end
+
+	entityTable.Debug.OnEntityEnteredRoom = function(room)
+		print("Entity:", entityTable, "has entered room:", room)
+	end
+
+	entityTable.Debug.OnLookAtEntity = function()
+		print("Player has looked at entity:", entityTable)
+	end
+
+	entityTable.Debug.OnDeath = function()
+		warn("Player has died.")
+	end
+	------------------------------------
+
+
+	-- Run the created entity
+	Spawner.runEntity(entityTable)
+end)
+
+Section:NewButton("Stormrift Gem", "Spawns Stormrift Gem Entity", function()
+	local Spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors%20Entity%20Spawner/Source.lua"))()
+
+
+	-- Create entity
+	local entityTable = Spawner.createEntity({
+		CustomName = "somfit", -- Custom name of your entity
+		Model = "rbxassetid://13180688503", -- Can be GitHub file or rbxassetid
+		Speed = 80, -- Percentage, 100 = default Rush speed
+		DelayTime = 0, -- Time before starting cycles (seconds)
+		HeightOffset = 0,
+		CanKill = true,
+		KillRange = 25,
+		BackwardsMovement = false,
+		BreakLights = true,
+		FlickerLights = {
+			true, -- Enabled/Disabled
+			1, -- Time (seconds)
+		},
+		Cycles = {
+			Min = 1,
+			Max = 10,
+			WaitTime = 0,
+		},
+		CamShake = {
+			false, -- Enabled/Disabled
+			{3.5, 20, 0.1, 1}, -- Shake values (don't change if you don't know)
+			0, -- Shake start distance (from Entity to you)
+		},
+		Jumpscare = {
+			true, -- Enabled/Disabled
+			{
+				Image1 = "rbxassetid://9442211790", -- Image1 url
+				Image2 = "rbxassetid://9442211790", -- Image2 url
+				Shake = true,
+				Sound1 = {
+					9091915146, -- SoundId
+					{ Volume = 2 }, -- Sound properties
+				},
+				Sound2 = {
+					9091915146, -- SoundId
+					{ Volume = 10 }, -- Sound properties13074272569
 				},
 				Flashing = {
 					true, -- Enabled/Disabled
