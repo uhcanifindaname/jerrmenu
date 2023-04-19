@@ -469,7 +469,9 @@ end)
 local Tab = Window:NewTab("Items")
 local Section = Tab:NewSection("ebic itms")
 Section:NewButton("Crucifix", "only works on spawned entities", function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/Johnny39871/assets/main/crucifixo'))()
+	_G.Uses = math.huge --How many times the Crucifix can be used.
+	_G.Range = 30 --From how far it would crucifix an entity.
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
 end)
 Section:NewButton("Stormrift Lantern", "Gives Stormrift Lantern Item", function()
 	local item =  game:GetObjects("rbxassetid://13077252519")[1]
