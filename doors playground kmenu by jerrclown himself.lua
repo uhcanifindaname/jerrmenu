@@ -468,6 +468,9 @@ Section:NewButton("Suicide Influencer, Freddy Fazbear!", "Spawns Suicide Influen
 end)
 local Tab = Window:NewTab("Items")
 local Section = Tab:NewSection("ebic itms")
+Section:NewButton("Crucifix", "only works on spawned entities", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/Johnny39871/assets/main/crucifixo'))()
+end)
 Section:NewButton("Stormrift Lantern", "Gives Stormrift Lantern Item", function()
 	local item =  game:GetObjects("rbxassetid://13077252519")[1]
 	item.Parent = game.Players.LocalPlayer.Backpack
