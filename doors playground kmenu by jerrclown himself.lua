@@ -20,7 +20,7 @@ Section:NewButton("Jay Gamez", "Spawns JayGamez Entity", function()
 		CanKill = true,
 		KillRange = 25,
 		BackwardsMovement = false,
-		BreakLights = true,
+		BreakLights = false,
 		FlickerLights = {
 			true, -- Enabled/Disabled
 			1, -- Time (seconds)
@@ -112,7 +112,7 @@ Section:NewButton("jerr", "Spawns jerr Entity", function()
 		CanKill = true,
 		KillRange = 25,
 		BackwardsMovement = false,
-		BreakLights = true,
+		BreakLights = false,
 		FlickerLights = {
 			true, -- Enabled/Disabled
 			1, -- Time (seconds)
@@ -204,7 +204,7 @@ Section:NewButton("Wario", "Spawns Wario Entity", function()
 		CanKill = true,
 		KillRange = 25,
 		BackwardsMovement = false,
-		BreakLights = true,
+		BreakLights = false,
 		FlickerLights = {
 			true, -- Enabled/Disabled
 			1, -- Time (seconds)
@@ -296,7 +296,7 @@ Section:NewButton("Freddy Fazbear", "Spawns Freddy Fazbear Entity", function()
 		CanKill = true,
 		KillRange = 25,
 		BackwardsMovement = false,
-		BreakLights = true,
+		BreakLights = false,
 		FlickerLights = {
 			true, -- Enabled/Disabled
 			1, -- Time (seconds)
@@ -388,7 +388,7 @@ Section:NewButton("Larry Normal", "Spawns Larry Entity", function()
 		CanKill = true,
 		KillRange = 25,
 		BackwardsMovement = false,
-		BreakLights = true,
+		BreakLights = false,
 		FlickerLights = {
 			true, -- Enabled/Disabled
 			1, -- Time (seconds)
@@ -476,7 +476,7 @@ end)
 			CanKill = true,
 			KillRange = 25,
 			BackwardsMovement = false,
-			BreakLights = true,
+			BreakLights = false,
 			FlickerLights = {
 				true, -- Enabled/Disabled
 				1, -- Time (seconds)
@@ -569,7 +569,7 @@ Section:NewButton("Larry Angy", "Spawns Larry Angy Entity", function()
 		CanKill = true,
 		KillRange = 25,
 		BackwardsMovement = false,
-		BreakLights = true,
+		BreakLights = false,
 		FlickerLights = {
 			true, -- Enabled/Disabled
 			1, -- Time (seconds)
@@ -662,7 +662,7 @@ Section:NewButton("🌽hub", "Spawns 🌽hub Entity", function()
 		CanKill = true,
 		KillRange = 25,
 		BackwardsMovement = false,
-		BreakLights = true,
+		BreakLights = false,
 		FlickerLights = {
 			true, -- Enabled/Disabled
 			1, -- Time (seconds)
@@ -752,7 +752,7 @@ Section:NewButton("Stormrift Gem", "Spawns Stormrift Gem Entity", function()
 		Speed = 80, -- Percentage, 100 = default Rush speed
 		DelayTime = 0, -- Time before starting cycles (seconds)
 		HeightOffset = 0,
-		CanKill = true,
+		CanKill = false,
 		KillRange = 25,
 		BackwardsMovement = false,
 		BreakLights = true,
